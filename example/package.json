@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "next build && cp -r out/ ../docs",
+    "build": "next build",
     "dev": "next",
     "develop": "yarn dev",
     "export": "next export",
