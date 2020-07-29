@@ -1,5 +1,11 @@
 # useStateIfMounted
 A hook for updating state only if the component is mounted.
+Find it on [npm](https://www.npmjs.com/package/use-state-if-mounted), or add it to your project :
+```bash
+$ npm install use-state-if-mounted
+# or
+$ yarn add use-state-if-mounted
+```
 
 ## How to use
 Use this hook just like React's [useState](https://reactjs.org/docs/hooks-reference.html#usestate).
