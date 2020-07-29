@@ -149,6 +149,9 @@ return (
             </code>
           </pre>
           <p>
+            See <a href="https://codesandbox.io/s/vmm13qmw67?file=/src/index.js">CodeSandbox</a>.
+          </p>
+          <p>
             The issue can be fixed with our hook by simply replacing <code>useState</code> with <code>useStateIfMounted</code>
           </p>
           <pre>
@@ -158,7 +161,7 @@ const apiCall = n =>
 new Promise(resolve => setTimeout(() => resolve(n + 1), 3000));
 
 const ShowApiCallResult = () => {
-const [n, setN] = useState(0);
+const [n, setN] = useStateIfMounted(0); // notice the change 🚀
 useEffect(() => {
   apiCall(n).then(newN => setN(newN));
 });
@@ -167,7 +170,8 @@ return String(n);
 };
 
 const RemoveComponentWithPendingApiCall = () => {
-const [show, setShow] = useStateIfMounted(true); // notice the change 🚀
+const [show, setShow] = useState(true); // this setShow will never cause a memory leak in this situation
+// so we can use vanilla setState
 return (
   <React.Fragment>
     <button onClick={() => setShow(false)}>Click me</button>
@@ -177,6 +181,9 @@ return (
 };`}
             </code>
           </pre>
+          <p>
+            See <a href="https://codesandbox.io/s/gracious-mahavira-3k62q?file=/src/index.js">CodeSandbox</a>.
+          </p>
         </section>
 
         <footer>
