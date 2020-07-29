@@ -36,5 +36,6 @@
   },
   "bugs": {
     "url": "https://github.com/NansD/use-state-if-mounted/issues"
-  }
+  },
+  "homepage": "https://nansd.github.io/use-state-if-mounted/"
 }
