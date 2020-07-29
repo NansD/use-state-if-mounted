@@ -1,16 +1,18 @@
 {
   "name": "use-state-if-mounted",
   "version": "1.0.1",
-  "description": "A starter for creating a new React hook",
+  "description": "A hook for updating state only if the component is mounted.",
   "author": {
     "name": "Nans Dumortier",
-    "email": "hello@colbyfayock.com",
-    "url": "https://twitter.com/colbyfayock"
+    "email": "dumortier.nans@gmail.com",
+    "url": "https://github.com/NansD/"
   },
   "keywords": [
     "react",
     "hooks",
-    "react-hooks"
+    "react-hooks",
+    "useState",
+    "isMounted"
   ],
   "main": "index.js",
   "scripts": {
@@ -30,9 +32,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/use-state-if-mounted"
+    "url": "https://github.com/NansD/use-state-if-mounted"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/use-state-if-mounted/issues"
+    "url": "https://github.com/NansD/use-state-if-mounted/issues"
   }
 }

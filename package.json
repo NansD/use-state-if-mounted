@@ -12,8 +12,7 @@
     "develop": "yarn watch",
     "watch": "concurrently -n Hook,Example \"yarn watch:hook\" \"yarn watch:example\"",
     "watch:example": "yarn workspace example develop",
-    "watch:hook": "yarn workspace use-state-if-mounted watch",
-    "setup": "node ./scripts/setup.js"
+    "watch:hook": "yarn workspace use-state-if-mounted watch"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
