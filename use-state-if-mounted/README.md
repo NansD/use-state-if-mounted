@@ -7,6 +7,16 @@ $ npm install use-state-if-mounted
 $ yarn add use-state-if-mounted
 ```
 
+----
+
+## 🔴 UPDATE
+
+This "solution" doesn't avoid leaks. Even AbortController doesn't seem to be the silver bullet against memory leaks 😰.
+Check out the [discussion in the comments](https://dev.to/nans/an-elegant-solution-for-memory-leaks-in-react-1hol)!
+
+----
+
+
 ## How to use
 Use this hook just like React's [useState](https://reactjs.org/docs/hooks-reference.html#usestate).
 
@@ -19,7 +29,7 @@ Warning: Can't perform a React state update on an unmounted component. This is a
 ### Basic usage
 ```javascript
 const [count, setCount] = useStateIfMounted(0);
-````
+```
 
 ### "Real use case" usage
 Based from this [issue](https://github.com/facebook/react/issues/14113) from Github.
