@@ -1,6 +1,6 @@
 {
   "name": "use-state-if-mounted",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A hook for updating state only if the component is mounted.",
   "author": {
     "name": "Nans Dumortier",

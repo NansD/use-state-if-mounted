@@ -16,10 +16,10 @@ import { useState } from 'react';
 export default function useStateIfMounted (initialValue) {
   const isComponentMounted = useIsComponentMounted();
   const [state, setState] = useState(initialValue);
-  function newSetState(value) {
+  const newSetState = useCallback((value) => {
     if (isComponentMounted.current) {
       setState(value);
     }
-  }
+  }, [isComponentMounted]);
   return [state, newSetState]
 }
