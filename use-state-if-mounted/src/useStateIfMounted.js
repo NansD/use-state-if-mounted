@@ -10,8 +10,8 @@ import { useState, useCallback } from 'react';
  * @export
  * @param {any} initialValue
  * @returns {[any, Diapatch<any>]} an array of 2 items
- * the first is the current state, the second is a function that enables
- * updating the state if the component is not mounted
+ * the first is the current state, the second is a state update function
+ * that does nothing if the component is not mounted
  */
 export default function useStateIfMounted (initialValue) {
   const isComponentMounted = useIsComponentMounted();
